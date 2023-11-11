@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
+import "../style.css";
+
 import Image from "../assets/avator_files/pp6.png";
 
 const Hero = () => {
@@ -20,15 +22,17 @@ const Hero = () => {
 
         <div>
           <h5 className={`${styles.heroHeadText} text-white`}>
-            Hi there! 👋🏻 I'm <span className="text-[#915EFF]">Rediet</span>
+            Hi there!{" "}
+            <span className="wave" role="img" aria-labelledby="wave">
+              👋🏻
+            </span>{" "}
+            <br />
+            I'm <span className="text-[#915EFF]">Rediet</span>
           </h5>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             <br className="sm:block hidden" />
             software Engineer/React developer
           </p>
-        </div>
-        <div>
-          <img src={Image} alt="Description" style={imageStyle} />
         </div>
       </div>
 

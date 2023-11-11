@@ -27,6 +27,8 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
 import jobsearchapp from "./jobsearchapp.png";
+import crwn from "./crwn.jpg";
+import amazon from "./amazon.jpg";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
@@ -57,6 +59,8 @@ export {
   starbucks,
   tesla,
   jobsearchapp,
+  crwn,
   jobit,
   tripguide,
+  amazon,
 };

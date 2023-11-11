@@ -8,6 +8,7 @@ import Works from "./Works";
 // import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
+import SocialMedia from "./Socialmedia";
 
 export {
   Hero,
@@ -18,6 +19,7 @@ export {
   Works,
   // Feedbacks,
   Contact,
+  SocialMedia,
   CanvasLoader,
   EarthCanvas,
   BallCanvas,

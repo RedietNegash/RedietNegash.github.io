@@ -23,6 +23,8 @@ import {
   jobit,
   tripguide,
   threejs,
+  crwn,
+  amazon,
 } from "../assets";
 
 export const navLinks = [
@@ -187,16 +189,20 @@ const projects = [
     source_code_link: "https://github.com/RedietNegash/Job_Search_App",
   },
   {
-    name: "Job IT",
+    name: "crwn-clothing",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A full stack Ecommerce clothing store built with React, Redux, React Hooks using Firebase and Stripe API , CRWN Clothing is a modern and user-friendly e-commerce platform that allows users to browse, purchase and track their favorite clothing items online, Customers can use various filters and sorting options to search for specific items and add them to their cart with a single click.",
     tags: [
       {
-        name: "react",
+        name: "react/redux",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "firebase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "stripe",
         color: "green-text-gradient",
       },
       {
@@ -204,29 +210,39 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: crwn,
+    source_code_link: "https://github.com/RedietNegash/crwn-clothing",
+    projectlink: "https://crwn-clothing00.netlify.app/",
   },
   {
-    name: "Trip Guide",
+    name: "Amazon Clone",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A full-stack e-commerce website inspired by Amazon using React, Node.js, and Express.js. Implemented features such as user authentication, product catalog, shopping cart functionality, and secure payment integration",
     tags: [
       {
-        name: "nextjs",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "bootstrap",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "stripe",
         color: "pink-text-gradient",
       },
+      {
+        name: "firebase",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "blue-text-gradient",
+      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: amazon,
+    source_code_link: "https://github.com/RedietNegash/Amazon_Clone",
+    projectlink: "https://amazonclonebyrediet.netlify.app/",
   },
 ];
 

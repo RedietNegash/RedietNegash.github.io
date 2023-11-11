@@ -7,6 +7,7 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { BsBoxArrowUpRight } from "react-icons/bs";
 
 const ProjectCard = ({
   index,
@@ -15,22 +16,8 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  projectlink,
 }) => {
-  const handleMouseEnter = () => {
-    const viewMoreText = document.getElementById(`view-more-${index}`);
-    if (viewMoreText) {
-      viewMoreText.style.opacity = 1;
-      viewMoreText.style.transition = "opacity 0.3s ease-in-out";
-    }
-  };
-
-  const handleMouseLeave = () => {
-    const viewMoreText = document.getElementById(`view-more-${index}`);
-    if (viewMoreText) {
-      viewMoreText.style.opacity = 0;
-    }
-  };
-
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -40,8 +27,6 @@ const ProjectCard = ({
           speed: 450,
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
       >
         <div className="relative w-full h-[230px]">
           <img
@@ -80,13 +65,13 @@ const ProjectCard = ({
           ))}
         </div>
 
-        <p
-          id={`view-more-${index}`}
-          className="absolute opacity-0 text-white font-bold text-[24px] transition duration-300 inset-0 flex justify-center items-center"
-          style={{ zIndex: 10 }}
+        <a
+          href={projectlink}
+          target="_blank"
+          className="flex items-center mt-4 p-2 bg-primary text-white rounded-md transition duration-300 ease-in-out transform hover:scale-105 w-36"
         >
-          View More
-        </p>
+          <BsBoxArrowUpRight className="mr-2" /> Preview
+        </a>
       </Tilt>
     </motion.div>
   );
